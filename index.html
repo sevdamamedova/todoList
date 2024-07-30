@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo list</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+    <div class="mx-auto my-[50px] w-[390px] ">
+
+        <form id="form" class="inline-flex justify-between itme-center border border-[b8b8b8] rounded-[5px] w-full rounded-[4px]  mb-[10px] h-[40px] ">
+            <input class="w-full pl-[10px]" id="input" value=" " type="text" placeholder="Yaz..">
+            <button type="submit"  class="font-bold bg-[#13e328] w-[40px] text-[#fff] h-full"><i class="fa fa-plus size-[15px]"></i></button>
+        </form>
+
+        <div id="btnSelect" class="flex justify-between">
+            <button id="btn-all" class="border border-[b8b8b8] px-[30px] py-[3px] rounded-[5px] font-bold text-[#fff] bg-[#5C5C5C]">All</button>
+            <button id="btn-com" class="border border-[b8b8b8] px-[30px] py-[3px] rounded-[5px] font-bold text-[#5C5C5C]">Compladed</button>
+            <button id="btn-pen" class="border border-[b8b8b8] px-[30px] py-[3px] rounded-[5px] font-bold text-[#5C5C5C]">Pending</button>
+           
+        </div>
+        <div id="content">
+            <div class="flex justify-between my-[10px] border px-[10px] py-[5px] w-full rounded-[4px]">
+                <div class="flex itme-center justify-between gap-[8px]" >
+                   <input id="checkbox-${index}" type="checkbox" class="border border-[b8b8b8]" />
+                   <span id="span-${index}" class="font-bold text-[12px]">Task1</span>
+                </div> 
+                <div class="flex itme-center justify-between gap-[8px]">
+                   <button class=" bg-[red]  rounded-[5px] size-[20px] flex item-center justify-center " > <i class="fa fa-trash text-[10px] my-auto text-[#fff]"></i></button>
+                   <button class=" bg-[blue] size-[20px]  rounded-[5px] flex item-center justify-center"> <i class="fa fa-pen text-[10px] my-auto text-[#fff]"></i></button>
+                </div>
+              </div>
+
+              <div class="flex justify-between my-[10px] border px-[10px] py-[5px] w-full rounded-[4px]">
+                <div class="flex itme-center justify-between gap-[8px]" >
+                   <input id="checkbox-${index}" type="checkbox" class="border border-[b8b8b8]" />
+                   <span id="span-${index}" class="font-bold text-[12px] line-through">Task1</span>
+                </div> 
+                <div class="flex itme-center justify-between gap-[8px]">
+                   <button class=" bg-[red]  rounded-[5px] size-[20px] flex item-center justify-center " > <i class="fa fa-trash text-[10px] my-auto text-[#fff]"></i></button>
+                   <button class=" bg-[blue] size-[20px]  rounded-[5px] flex item-center justify-center"> <i class="fa fa-pen text-[10px] my-auto text-[#fff]"></i></button>
+                </div>
+              </div>
+            
+        </div>
+
+        
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
